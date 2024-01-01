@@ -5,4 +5,3 @@ pickle
 scikit-learn
 pip=22.2.2
 matplotlib
-pip=22.2.2
