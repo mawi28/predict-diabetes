@@ -1,7 +1,6 @@
 numpy
 pandas
 streamlit
-pickle
 scikit-learn
 pip==22.0.3
 matplotlib
