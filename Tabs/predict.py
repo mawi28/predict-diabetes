@@ -6,14 +6,14 @@ from web_functions import predict
 def app(df, x, y):
 
     st.title("Halaman Prediksi")
-    Pregnancies = st.number_input('Input Nilai Pregnancies 0-11', 0,11)
-    Glucose = st.text_input('Input Nilai Glucose')
-    BloodPressure = st.text_input('Input Nilai Blood Pressure (mm Hg)')
-    SkinThickness = st.text_input('Input Nilai SkinThickness (mm)')
-    Insulin = st.text_input('Input Nilai Insulin (mu U/ml)')
-    BMI = st.text_input('Input Nilai BMI (berat badan dalam kg/(tinggi badan dalam m)^2)')
-    DiabetesPedigreeFunction = st.text_input('Input Nilai Diabetes Pedigree Function')
-    Age = st.text_input('Input Nilai Age (dalam tahun)')
+    Pregnancies = st.number_input('Input Nilai Pregnancies 0-17', 0,17)
+    Glucose = st.number_input('Input Nilai Glucose 0-199', 0,199)
+    BloodPressure = st.number_input('Input Nilai Blood Pressure (mm Hg 0-122)', 0,122)
+    SkinThickness = st.number_input('Input Nilai SkinThickness (mm 0-99), 0,99')
+    Insulin = st.number_input('Input Nilai Insulin (mu U/ml 0-846), 0,846')
+    BMI = st.number_input('Input Nilai BMI 0 - 67.1 (berat badan dalam kg/(tinggi badan dalam m)^2)', 0,67.1)
+    DiabetesPedigreeFunction = st.number_input('Input Nilai Diabetes Pedigree Function 0.078-2.420', 0.078, 2.420)
+    Age = st.text_input('Input Nilai Age (dalam tahun) 21-81', 21, 81)
 
     features = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]
 
