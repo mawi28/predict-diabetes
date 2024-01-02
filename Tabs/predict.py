@@ -6,14 +6,14 @@ from web_functions import predict
 def app(df, x, y):
 
     st.title("Halaman Prediksi")
-    Pregnancies = st.text_input('Input Nilai Pregnancies')
+    Pregnancies = st.text_input('Input Nilai Pregnancies 0-11' 0,11)
     Glucose = st.text_input('Input Nilai Glucose')
     BloodPressure = st.text_input('Input Nilai Blood Pressure (mm Hg)')
     SkinThickness = st.text_input('Input Nilai SkinThickness (mm)')
     Insulin = st.text_input('Input Nilai Insulin (mu U/ml)')
     BMI = st.text_input('Input Nilai BMI (berat badan dalam kg/(tinggi badan dalam m)^2)')
     DiabetesPedigreeFunction = st.text_input('Input Nilai Diabetes Pedigree Function')
-    Age = st.text_input('Input Nilai Age (dalam tahun')
+    Age = st.text_input('Input Nilai Age (dalam tahun)')
 
     features = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]
 
