@@ -8,7 +8,7 @@ def app(df, x, y):
     st.title("Halaman Prediksi")
     Pregnancies = st.text_input('Input Nilai Pregnancies')
     Glucose = st.text_input('Input Nilai Glucose')
-    BloodPressure = st.text_input('Input Nilai Blood Pressure')
+    BloodPressure = st.text_input('Input Nilai Blood Pressure (mm Hg)')
     SkinThickness = st.text_input('Input Nilai SkinThickness')
     Insulin = st.text_input('Input Nilai Insulin')
     BMI = st.text_input('Input Nilai BMI')
