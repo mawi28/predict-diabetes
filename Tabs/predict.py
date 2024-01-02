@@ -6,7 +6,7 @@ from web_functions import predict
 def app(df, x, y):
 
     st.title("Halaman Prediksi")
-    Pregnancies = st.number_input('Input Nilai Pregnancies 0-17', 0,17)
+    Pregnancies = st.selectbox('Pilih Nilai Pregnancies', ['1', '2', '3', '4', '5', ' 6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17'])
     Glucose = st.number_input('Input Nilai Glucose 0-199', 0,199)
     BloodPressure = st.number_input('Input Nilai Blood Pressure (mm Hg 0-122)', 0,122)
     SkinThickness = st.number_input('Input Nilai SkinThickness (mm 0-99)', 0,99)
