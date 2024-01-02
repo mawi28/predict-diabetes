@@ -6,7 +6,7 @@ from web_functions import predict
 def app(df, x, y):
 
     st.title("Halaman Prediksi")
-    Pregnancies = st.text_input('Input Nilai Pregnancies 0-11' 0,11)
+    Pregnancies = st.number_input('Input Nilai Pregnancies 0-11', 0,11)
     Glucose = st.text_input('Input Nilai Glucose')
     BloodPressure = st.text_input('Input Nilai Blood Pressure (mm Hg)')
     SkinThickness = st.text_input('Input Nilai SkinThickness (mm)')
