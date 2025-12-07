@@ -154,7 +154,6 @@ def plot_knn_accuracy(x_train, y_train, x_test, y_test, max_neighbors):
 # Fungsi utama aplikasi
 def app(df, x, y):
     warnings.filterwarnings('ignore')
-    st.set_option('deprecation.showPyplotGlobalUse', False)
 
     st.title("Halaman Visualisasi Prediksi Diabetes")
 
@@ -244,3 +243,4 @@ if __name__ == '__main__':
     y = df['Outcome']
 
     app(df, x, y)
+
